@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+:root {
+    --nicecolor: linear-gradient(360deg, rgba(106,68,157,1) 0%, rgba(255,13,164,1) 100%);
+}
+
+h1 {
+    color: white;
+    padding-left: 1%;
+    padding-bottom: 1%;
+    margin-top: 7%;
+    text-decoration: underline;
+    background: var(--nicecolor);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(/assets/bg.jpg);
+    font-family: 'Nunito', sans-serif;
+}
+
+.wrapper {
+    background-color: #fff;
+    font-family: 'Nunito', sans-serif;
+    margin: 0 auto;
+    max-width: 25%;
+    margin-top: 2%;
+    box-shadow: 0 0 3px 3px rgb(123, 168, 246);
+    animation-name: animate1; 
+    animation-duration: 2s; 
+    animation-iteration-count: 1;
+    animation-fill-mode: zoom-in; 
+    animation-delay: 0s; 
+}
+
+.wrapper__box {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.p_one {
+    background-color: rgb(51, 108, 243);
+    padding-left: 3%;
+    color: black;
+}
+
+.Reg {
+    margin-top: 4%;
+    text-align: center;
+    margin-bottom: 6%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    max-width: 55%;
+}
+
+.inp {
+    margin-bottom: 6%;
+}
+
+.btn {
+    margin-bottom: 10%;
+    border: black 1px solid;
+}
+
+.a {
+    margin-top: 1%;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    animation-name: animate1; 
+    animation-duration: 2s; 
+    animation-iteration-count: 1;
+    animation-fill-mode: zoom-in; 
+    animation-delay: 0s; 
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@keyframes animate1 {
+    0% {
+    transform: scale(0, 1);
+    }
+    50% {
+    transform: scale(1, 1);
+    }
+    100% {
+    transform: scale(1, 1);
+    }
+}
+
+@keyframes animate2 {
+    0% {
+    transform: scale(0, 1);
+    }
+    50% {
+    transform: scale(1, 1);
+    }
+    100% {
+    transform: scale(1, 1);
+    }
+}
+
+@media all and (max-width: 600px) {
+    .wrapper {
+        max-width: 300px;
+        max-height: 500px;
+        margin-top: 10%;
+    }
+    h1 {
+        text-align: center;
+    }
+}
